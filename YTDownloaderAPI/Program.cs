@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using YTDownloaderAPI.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var policyName = "_myAllowSpecificOrigins";
@@ -18,6 +21,11 @@ builder.Services.AddCors(options =>
             .AllowAnyHeader();
         });
 });
+
+builder.Services.AddDbContext<PlayListContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"))
+);
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
