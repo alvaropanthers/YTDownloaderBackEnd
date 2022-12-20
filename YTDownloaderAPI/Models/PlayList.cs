@@ -2,16 +2,13 @@
 {
     public class PlayList
     {
-        //-- PlayList --
-        //-- Id
-        //-- UserId
-        //-- PlayListUrl
-        //-- CreatedAt
-        //-- UpdatedAt
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string UserId { get; set; }
         public string PlayListUrl { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+
+        public List<Audio> Audios { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace YTDownloaderAPI.wrapper
 {
-    public class PlayList
+    public class YoutubePlayList
     {
         public string Id { get; set; }
         public string Title { get; set; }

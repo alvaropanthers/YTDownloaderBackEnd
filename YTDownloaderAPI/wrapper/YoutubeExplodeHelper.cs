@@ -31,12 +31,12 @@ namespace YTDownloaderAPI.wrapper
             await youtube.Videos.Streams.DownloadAsync(streamInfo, $"{path}/{Utils.RandomString(10)}.{streamInfo.Container}");
         }
 
-        public static async Task<PlayList> ListPlayListVideosAsync(string playListURL)
+        public static async Task<YoutubePlayList> ListPlayListVideosAsync(string playListURL)
         {
             var youtube = new YoutubeClient();
             var youTubePlayList = await youtube.Playlists.GetAsync(playListURL);
 
-            var playList = new PlayList()
+            var playList = new YoutubePlayList()
             {
                 Id = youTubePlayList.Id.Value,
                 Title = youTubePlayList.Title,
