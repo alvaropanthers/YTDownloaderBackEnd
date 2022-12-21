@@ -27,7 +27,15 @@ namespace YTDownloaderAPI.Controllers
         [Route("SavedPlayList")]
         public PlayList GetSavedPlayList(int id)
         {
-            return _context.PlayLists.Where(x => x.Id == id).First();
+            var playlist = _context.PlayLists
+                .Where(x => x.Id == id)
+                .First();
+
+            playlist.Audios = _context.Audios
+                .Where(x => x.PlayListId == playlist.Id)
+                .ToList();
+            
+            return playlist;
         }
 
         [HttpPut]
@@ -35,22 +43,19 @@ namespace YTDownloaderAPI.Controllers
         {
             YoutubePlayList youtubePlayList = YoutubeExplodeHelper.ListPlayListVideosAsync(playList.PlayListUrl).Result;
 
-            var playListEntityEntry = _context.PlayLists.Add(playList);
-            _context.SaveChanges();
-
-            var playListEntity = playListEntityEntry.Entity;
+            playList.Audios = new List<Audio>();
             youtubePlayList.Videos.ForEach(video =>
             {
-                _context.Audios.Add(new Audio()
+                playList.Audios.Add(new Audio()
                 {
                     YtId = video.Id,
                     Url = video.Url,
                     ChannelTitle = video.ChannelTitle,
-                    Title = video.Title,
-                    PlayList = playListEntity
+                    Title = video.Title
                 });
             });
 
+            var playListEntityEntry = _context.PlayLists.Add(playList);
             _context.SaveChanges();
 
             return playListEntityEntry.Entity;

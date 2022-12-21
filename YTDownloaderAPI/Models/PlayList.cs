@@ -8,7 +8,6 @@
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
-
-        public List<Audio> Audios { get; set; }
+        public ICollection<Audio> Audios { get; set; }
     }
 }

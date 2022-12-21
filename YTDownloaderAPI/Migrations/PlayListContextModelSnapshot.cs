@@ -37,7 +37,7 @@ namespace YTDownloaderAPI.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("PlayListId")
+                    b.Property<int>("PlayListId")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
@@ -91,11 +91,11 @@ namespace YTDownloaderAPI.Migrations
 
             modelBuilder.Entity("YTDownloaderAPI.Models.Audio", b =>
                 {
-                    b.HasOne("YTDownloaderAPI.Models.PlayList", "PlayList")
+                    b.HasOne("YTDownloaderAPI.Models.PlayList", null)
                         .WithMany("Audios")
-                        .HasForeignKey("PlayListId");
-
-                    b.Navigation("PlayList");
+                        .HasForeignKey("PlayListId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("YTDownloaderAPI.Models.PlayList", b =>

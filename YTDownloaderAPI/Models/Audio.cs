@@ -10,7 +10,6 @@
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
 
-        public int? PlayListId { get; set; }
-        public PlayList PlayList { get; set; }
+        public int PlayListId { get; set; }
     }
 }

@@ -12,8 +12,8 @@ using YTDownloaderAPI.Models;
 namespace YTDownloaderAPI.Migrations
 {
     [DbContext(typeof(PlayListContext))]
-    [Migration("20221220024327_UpdateAudioModel")]
-    partial class UpdateAudioModel
+    [Migration("20221221121550_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -94,13 +94,16 @@ namespace YTDownloaderAPI.Migrations
 
             modelBuilder.Entity("YTDownloaderAPI.Models.Audio", b =>
                 {
-                    b.HasOne("YTDownloaderAPI.Models.PlayList", "PlayList")
-                        .WithMany()
+                    b.HasOne("YTDownloaderAPI.Models.PlayList", null)
+                        .WithMany("Audios")
                         .HasForeignKey("PlayListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
 
-                    b.Navigation("PlayList");
+            modelBuilder.Entity("YTDownloaderAPI.Models.PlayList", b =>
+                {
+                    b.Navigation("Audios");
                 });
 #pragma warning restore 612, 618
         }
