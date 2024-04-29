@@ -11,6 +11,7 @@ using CSCore.Codecs.WAV;
 
 Console.ForegroundColor = ConsoleColor.White;
 
+const string FILE_EXTENSION = ".pp";
 const string MF = "C:\\Users\\Alvaro.Orozco\\Documents\\music_pp";
 var audioPlayer = new AudioPlayer();
 List<PPFile>? ppFiles;
@@ -20,7 +21,7 @@ bool isLoop = false;
 
 void Log(object log) 
 {
-    Console.WriteLine(log);
+    Console.Write(log);
 }
 
 void LoadFiles()
@@ -29,7 +30,7 @@ void LoadFiles()
     foreach (var file in Directory.GetFiles(MF))
     {
         var fileName = Path.GetFileName(file);
-        if (fileName.Contains(".pp"))
+        if (fileName.Contains(FILE_EXTENSION))
         {
             var result = File.OpenRead(file);
             var buffer = new byte[result.Length];
@@ -49,9 +50,12 @@ void ShowFilesOptions()
 
     foreach(var ppFile in ppFiles)
     {
-        Log($"id={ppFile.Id}");
-        Log($"name={ppFile.Title}");
-        Log("");
+        Log($"id=");
+        Console.ForegroundColor = ConsoleColor.DarkBlue;
+        Log($"{ppFile.Id}\n");
+        Console.ForegroundColor = ConsoleColor.White;
+        Log($"name={ppFile.Title}\n");
+        Log("\n");
     }
 }
 
@@ -93,7 +97,7 @@ void SetAudioFileToPercentage(int percentage)
 
 void ShowPrompt()
 {
-    Log("Enter id of file to play: ");
+    Log("Enter id of file to play: \n");
     Console.ForegroundColor = ConsoleColor.Green;
     string result = Console.ReadLine();
     Console.ForegroundColor = ConsoleColor.White;
@@ -142,28 +146,28 @@ while(executing)
     ShowFilesOptions();
 
     Console.ForegroundColor = ConsoleColor.Cyan;
-    Log("p - pause. r - resume. t - stops playing file. h - sets position. e - exits program. a - reloads list");
-    Log("");
+    Log("p - pause. r - resume. t - stops playing file. h - sets position. e - exits program. a - reloads list\n");
+    Log("\n");
     Console.ForegroundColor = ConsoleColor.White;
 
     if (currentPPFile != null)
     {
         Console.ForegroundColor = ConsoleColor.Green;
-        Log($"Current playing: {currentPPFile.Title}");
+        Log($"Current playing: {currentPPFile.Title}\n");
 
         var currentState = audioPlayer.GetCurrentState();
         if (currentState != null) 
         {
             var waveSource = audioPlayer.GetWave();
             var currentPercentage = Math.Ceiling((double)waveSource.Position / (double)waveSource.Length * 100);
-            Log($"Played: {currentPercentage}%, Time: {waveSource.GetTime(waveSource.Length)}, Format: {waveSource.WaveFormat.WaveFormatTag}");
-            Log($"State: {currentState.Value}");
+            Log($"Played: {currentPercentage}%, Time: {waveSource.GetTime(waveSource.Length)}, Format: {waveSource.WaveFormat.WaveFormatTag}\n");
+            Log($"State: {currentState.Value}\n");
         }
 
         Console.ForegroundColor = ConsoleColor.White;
-        Log("");
+        Log("\n");
     }
 
     ShowPrompt();
-    Log("");
+    Log("\n");
 }

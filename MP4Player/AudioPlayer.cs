@@ -42,6 +42,20 @@ namespace MP4Player
             if (_soundOut != null) _soundOut.Play();
         }
 
+        public void ConvertToWav(string path, string fileName) 
+        {
+            var _waveSource =
+                CodecFactory.Instance.GetCodec(path)
+                    .ToSampleSource()
+                    .ToMono()
+                    .ToWaveSource();
+
+            _soundOut = new WasapiOut();
+            _soundOut.Initialize(_waveSource);
+
+            _soundOut.WaveSource.WriteToFile(fileName);
+        }
+
         public void StopAudioFile()
         {
             _soundOut?.Stop();
