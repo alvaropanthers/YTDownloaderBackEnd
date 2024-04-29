@@ -1,0 +1,12 @@
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\bin\Debug\net8.0\PPFileLibrary.deps.json
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\bin\Debug\net8.0\PPFileLibrary.dll
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\bin\Debug\net8.0\PPFileLibrary.pdb
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\PPFileLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\PPFileLibrary.AssemblyInfoInputs.cache
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\PPFileLibrary.AssemblyInfo.cs
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\PPFileLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\PPFileLibrary.sourcelink.json
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\PPFileLibrary.dll
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\refint\PPFileLibrary.dll
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\PPFileLibrary.pdb
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\ref\PPFileLibrary.dll

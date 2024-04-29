@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YTDownloaderAPI", "YTDownloaderAPI\YTDownloaderAPI.csproj", "{3044647F-F971-4673-8D7A-13000BDB6A8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YTDownloaderAPI", "YTDownloaderAPI\YTDownloaderAPI.csproj", "{3044647F-F971-4673-8D7A-13000BDB6A8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YTDownloader", "YTDownloader\YTDownloader.csproj", "{3CF55273-BEA5-45D4-A011-EB8A6971B9A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP4Player", "MP4Player\MP4Player.csproj", "{DD7D21AD-7A06-489E-A9C2-2E4DB9CC0C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPFileLibrary", "PPFileLibrary\PPFileLibrary.csproj", "{6578F4E6-318D-4411-8FC8-8ADD8C5332E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{3044647F-F971-4673-8D7A-13000BDB6A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3044647F-F971-4673-8D7A-13000BDB6A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3044647F-F971-4673-8D7A-13000BDB6A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF55273-BEA5-45D4-A011-EB8A6971B9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF55273-BEA5-45D4-A011-EB8A6971B9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF55273-BEA5-45D4-A011-EB8A6971B9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF55273-BEA5-45D4-A011-EB8A6971B9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7D21AD-7A06-489E-A9C2-2E4DB9CC0C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7D21AD-7A06-489E-A9C2-2E4DB9CC0C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7D21AD-7A06-489E-A9C2-2E4DB9CC0C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7D21AD-7A06-489E-A9C2-2E4DB9CC0C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6578F4E6-318D-4411-8FC8-8ADD8C5332E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6578F4E6-318D-4411-8FC8-8ADD8C5332E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6578F4E6-318D-4411-8FC8-8ADD8C5332E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6578F4E6-318D-4411-8FC8-8ADD8C5332E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

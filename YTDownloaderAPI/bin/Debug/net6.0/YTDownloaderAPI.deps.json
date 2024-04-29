@@ -11,21 +11,21 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.1",
           "Swashbuckle.AspNetCore": "6.2.3",
-          "YoutubeExplode": "6.2.5"
+          "YoutubeExplode": "6.2.13"
         },
         "runtime": {
           "YTDownloaderAPI.dll": {}
         }
       },
-      "AngleSharp/0.17.0": {
+      "AngleSharp/1.0.1": {
         "dependencies": {
           "System.Buffers": "4.5.1",
-          "System.Text.Encoding.CodePages": "5.0.0"
+          "System.Text.Encoding.CodePages": "6.0.0"
         },
         "runtime": {
-          "lib/netstandard2.0/AngleSharp.dll": {
-            "assemblyVersion": "0.17.0.0",
-            "fileVersion": "0.17.0.0"
+          "lib/net6.0/AngleSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -97,7 +97,7 @@
           "System.Runtime.Caching": "5.0.0",
           "System.Security.Cryptography.Cng": "5.0.0",
           "System.Security.Principal.Windows": "5.0.0",
-          "System.Text.Encoding.CodePages": "5.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0",
           "System.Text.Encodings.Web": "7.0.0"
         },
         "runtime": {
@@ -691,9 +691,9 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Text.Encoding.CodePages/5.0.0": {
+      "System.Text.Encoding.CodePages/6.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.0"
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
       "System.Text.Encodings.Web/7.0.0": {
@@ -754,14 +754,14 @@
           }
         }
       },
-      "YoutubeExplode/6.2.5": {
+      "YoutubeExplode/6.2.13": {
         "dependencies": {
-          "AngleSharp": "0.17.0"
+          "AngleSharp": "1.0.1"
         },
         "runtime": {
           "lib/net5.0/YoutubeExplode.dll": {
-            "assemblyVersion": "6.2.5.0",
-            "fileVersion": "6.2.5.0"
+            "assemblyVersion": "6.2.13.0",
+            "fileVersion": "6.2.13.0"
           }
         }
       }
@@ -773,12 +773,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AngleSharp/0.17.0": {
+    "AngleSharp/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-74haoXINcj4SdMsmiNzk+9VUwIX1U9P61O6AZd5Uao8SGNnJJB8Y/r8VJRc8orn4c7Vk/oURAKSNF9XcSDxbfA==",
-      "path": "anglesharp/0.17.0",
-      "hashPath": "anglesharp.0.17.0.nupkg.sha512"
+      "sha512": "sha512-uIezZhHZqWEb4zw/D5Xnskqb/sivIFwfWcUX2srPWTE10IYahfrdhWTIk859BpEmPmxSlMoL+S0JimFTaWGaHA==",
+      "path": "anglesharp/1.0.1",
+      "hashPath": "anglesharp.1.0.1.nupkg.sha512"
     },
     "Azure.Core/1.24.0": {
       "type": "package",
@@ -1249,12 +1249,12 @@
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
-    "System.Text.Encoding.CodePages/5.0.0": {
+    "System.Text.Encoding.CodePages/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NyscU59xX6Uo91qvhOs2Ccho3AR2TnZPomo1Z0K6YpyztBPM/A5VbkzOO19sy3A3i1TtEnTxA7bCe3Us+r5MWg==",
-      "path": "system.text.encoding.codepages/5.0.0",
-      "hashPath": "system.text.encoding.codepages.5.0.0.nupkg.sha512"
+      "sha512": "sha512-ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+      "path": "system.text.encoding.codepages/6.0.0",
+      "hashPath": "system.text.encoding.codepages.6.0.0.nupkg.sha512"
     },
     "System.Text.Encodings.Web/7.0.0": {
       "type": "package",
@@ -1291,12 +1291,12 @@
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
-    "YoutubeExplode/6.2.5": {
+    "YoutubeExplode/6.2.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YzkfJ/2bMh4WWIdnJNH14/xooRr58qqDn9IquFnus3qPJIPgW4YFYE/Bw0YUMrUj6R92VXixgIf4kg+FJQbwPg==",
-      "path": "youtubeexplode/6.2.5",
-      "hashPath": "youtubeexplode.6.2.5.nupkg.sha512"
+      "sha512": "sha512-jpA/sWhlOcHuuBsyCF6b7hwVC4eAP3ryUhepOjmqgj9llDrwD5golj5bFa7J8A5xVbTse0y8F/tN5mLEh4OinA==",
+      "path": "youtubeexplode/6.2.13",
+      "hashPath": "youtubeexplode.6.2.13.nupkg.sha512"
     }
   }
 }

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alvaro\\source\\repos\\YTDownloaderAPI\\YTDownloaderAPI\\YTDownloaderAPI.csproj": {}
+    "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\YTDownloaderAPI\\YTDownloaderAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alvaro\\source\\repos\\YTDownloaderAPI\\YTDownloaderAPI\\YTDownloaderAPI.csproj": {
+    "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\YTDownloaderAPI\\YTDownloaderAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alvaro\\source\\repos\\YTDownloaderAPI\\YTDownloaderAPI\\YTDownloaderAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\YTDownloaderAPI\\YTDownloaderAPI.csproj",
         "projectName": "YTDownloaderAPI",
-        "projectPath": "C:\\Users\\Alvaro\\source\\repos\\YTDownloaderAPI\\YTDownloaderAPI\\YTDownloaderAPI.csproj",
-        "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alvaro\\source\\repos\\YTDownloaderAPI\\YTDownloaderAPI\\obj\\",
+        "projectPath": "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\YTDownloaderAPI\\YTDownloaderAPI.csproj",
+        "packagesPath": "C:\\Users\\Alvaro.Orozco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\YTDownloaderAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Alvaro.Orozco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Alvaro.Orozco\\Desktop\\pro-packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -82,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }
