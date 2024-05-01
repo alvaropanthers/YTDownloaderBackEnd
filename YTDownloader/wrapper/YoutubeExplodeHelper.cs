@@ -102,9 +102,7 @@ namespace YTDownloader.wrapper
             catch(Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("Error creating .pp file");
-                Console.WriteLine(ex.Message);
-
+                Console.WriteLine(ex);
                 Console.ForegroundColor = ConsoleColor.White;
             }
         }
