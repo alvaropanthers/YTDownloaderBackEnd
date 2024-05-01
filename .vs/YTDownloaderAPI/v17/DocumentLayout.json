@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD7D21AD-7A06-489E-A9C2-2E4DB9CC0C23}|MP4Player\\MP4Player.csproj|c:\\users\\alvaro.orozco\\source\\repos\\ytdownloaderbackend\\mp4player\\audioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD7D21AD-7A06-489E-A9C2-2E4DB9CC0C23}|MP4Player\\MP4Player.csproj|solutionrelative:mp4player\\audioplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CF55273-BEA5-45D4-A011-EB8A6971B9A0}|YTDownloader\\YTDownloader.csproj|c:\\users\\alvaro.orozco\\source\\repos\\ytdownloaderbackend\\ytdownloader\\wrapper\\youtubeexplodehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF55273-BEA5-45D4-A011-EB8A6971B9A0}|YTDownloader\\YTDownloader.csproj|solutionrelative:ytdownloader\\wrapper\\youtubeexplodehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AudioPlayer.cs",
-              "DocumentMoniker": "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\MP4Player\\AudioPlayer.cs",
-              "RelativeDocumentMoniker": "MP4Player\\AudioPlayer.cs",
-              "ToolTip": "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\MP4Player\\AudioPlayer.cs",
-              "RelativeToolTip": "MP4Player\\AudioPlayer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
+              "Title": "YoutubeExplodeHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\YTDownloader\\wrapper\\YoutubeExplodeHelper.cs",
+              "RelativeDocumentMoniker": "YTDownloader\\wrapper\\YoutubeExplodeHelper.cs",
+              "ToolTip": "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\YTDownloader\\wrapper\\YoutubeExplodeHelper.cs*",
+              "RelativeToolTip": "YTDownloader\\wrapper\\YoutubeExplodeHelper.cs*",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAUwJAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T18:21:54.285Z",
+              "WhenOpened": "2024-04-30T19:59:59.108Z",
               "EditorCaption": ""
             }
           ]

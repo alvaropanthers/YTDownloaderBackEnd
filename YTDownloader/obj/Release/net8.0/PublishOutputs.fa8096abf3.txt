@@ -1,0 +1,8 @@
+C:\Users\Alvaro.Orozco\Documents\useful_programs\YTDownloader\YTDownloader.exe
+C:\Users\Alvaro.Orozco\Documents\useful_programs\YTDownloader\YTDownloader.dll
+C:\Users\Alvaro.Orozco\Documents\useful_programs\YTDownloader\YTDownloader.deps.json
+C:\Users\Alvaro.Orozco\Documents\useful_programs\YTDownloader\YTDownloader.runtimeconfig.json
+C:\Users\Alvaro.Orozco\Documents\useful_programs\YTDownloader\YTDownloader.pdb
+C:\Users\Alvaro.Orozco\Documents\useful_programs\YTDownloader\AngleSharp.dll
+C:\Users\Alvaro.Orozco\Documents\useful_programs\YTDownloader\CSCore.dll
+C:\Users\Alvaro.Orozco\Documents\useful_programs\YTDownloader\YoutubeExplode.dll

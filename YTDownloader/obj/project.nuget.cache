@@ -1,12 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "Cu5cGFdJ6/iMJN8PpqbyJUQ07BpUHBzvzpFj8VLWT87bxqfLDIHH56x9KqCzxgJRkEhJV3M7h/4OXTWZ64JY5Q==",
+  "dgSpecHash": "OhynfqrmAFuPqGXDT9C7tX69JvwcV5YA+fZQi1o/+rtNB+B0Zc6Sne39wah3ru9GvHwcPK3d5jS4ri7v9DONLg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alvaro.Orozco\\source\\repos\\YTDownloaderBackEnd\\YTDownloader\\YTDownloader.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alvaro.Orozco\\.nuget\\packages\\anglesharp\\1.0.7\\anglesharp.1.0.7.nupkg.sha512",
+    "C:\\Users\\Alvaro.Orozco\\.nuget\\packages\\cscore\\1.2.1.2\\cscore.1.2.1.2.nupkg.sha512",
     "C:\\Users\\Alvaro.Orozco\\.nuget\\packages\\system.text.encoding.codepages\\8.0.0\\system.text.encoding.codepages.8.0.0.nupkg.sha512",
     "C:\\Users\\Alvaro.Orozco\\.nuget\\packages\\youtubeexplode\\6.3.13\\youtubeexplode.6.3.13.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CSCore 1.2.1.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CSCore",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

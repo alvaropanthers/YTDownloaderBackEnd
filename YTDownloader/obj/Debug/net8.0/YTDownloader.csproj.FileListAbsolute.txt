@@ -17,3 +17,4 @@ C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\YTDownloader\obj\Debug\n
 C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\YTDownloader\obj\Debug\net8.0\YTDownloader.pdb
 C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\YTDownloader\obj\Debug\net8.0\YTDownloader.genruntimeconfig.cache
 C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\YTDownloader\obj\Debug\net8.0\ref\YTDownloader.dll
+C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\YTDownloader\bin\Debug\net8.0\CSCore.dll

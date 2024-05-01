@@ -1,4 +1,7 @@
-﻿using YoutubeExplode;
+﻿using CSCore;
+using CSCore.Codecs;
+using CSCore.SoundOut;
+using YoutubeExplode;
 using YoutubeExplode.Common;
 using YoutubeExplode.Search;
 
@@ -55,8 +58,9 @@ namespace YTDownloader.wrapper
             {
                 var videoInfo = await youtube.Videos.GetAsync(videoUrl);
                 var ppFormatted = ToPP(videoInfo, fileName);
-
-                var ppFilePath = $"{path}\\{randomName}.pp";
+                
+                var fullFileNameWithoutExtension = $"{path}\\{randomName}";
+                var ppFilePath = $"{fullFileNameWithoutExtension}.pp";
 
                 Console.WriteLine("----------------------------");
                 Console.WriteLine("Creating .pp file");
@@ -75,11 +79,33 @@ namespace YTDownloader.wrapper
                 Console.WriteLine($"File downloaded \n {fullPath}");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("----------------------------");
+
+                Console.WriteLine("----------------------------");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Creating wav file");
+
+                var _waveSource =
+                CodecFactory.Instance.GetCodec(fullPath)
+                    .ToSampleSource()
+                    .ToMono()
+                    .ToWaveSource();
+
+                var _soundOut = new WasapiOut();
+                _soundOut.Initialize(_waveSource);
+
+                _soundOut.WaveSource.WriteToFile($"{fullFileNameWithoutExtension}.wav");
+
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("----------------------------");
                 Console.WriteLine();
             }
             catch(Exception ex)
             {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("Error creating .pp file");
+                Console.WriteLine(ex.Message);
+
+                Console.ForegroundColor = ConsoleColor.White;
             }
         }
 

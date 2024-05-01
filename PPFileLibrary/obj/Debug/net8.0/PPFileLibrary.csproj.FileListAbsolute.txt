@@ -10,3 +10,6 @@ C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\
 C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\refint\PPFileLibrary.dll
 C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\PPFileLibrary.pdb
 C:\Users\Alvaro.Orozco\source\repos\YTDownloaderBackEnd\PPFileLibrary\obj\Debug\net8.0\ref\PPFileLibrary.dll
+C:\Users\Alvaro.Orozco\Documents\useful_programs\PP_Player\PPFileLibrary.deps.json
+C:\Users\Alvaro.Orozco\Documents\useful_programs\PP_Player\PPFileLibrary.dll
+C:\Users\Alvaro.Orozco\Documents\useful_programs\PP_Player\PPFileLibrary.pdb

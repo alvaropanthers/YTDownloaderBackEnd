@@ -19,11 +19,13 @@ PPFile? currentPPFile = null;
 bool executing = true;
 bool isLoop = false;
 
+// Log
 void Log(object log) 
 {
     Console.Write(log);
 }
 
+// LoadFiles
 void LoadFiles()
 {
     ppFiles = new List<PPFile>();
@@ -44,18 +46,20 @@ void LoadFiles()
     }
 }
 
+// ShowFilesOptions
 void ShowFilesOptions()
 {
     if (ppFiles == null) return;
 
     foreach(var ppFile in ppFiles)
     {
+        Log("--------------------------------------------------------\n");
         Log($"id=");
         Console.ForegroundColor = ConsoleColor.DarkBlue;
         Log($"{ppFile.Id}\n");
         Console.ForegroundColor = ConsoleColor.White;
         Log($"name={ppFile.Title}\n");
-        Log("\n");
+        Log("--------------------------------------------------------\n");
     }
 }
 
